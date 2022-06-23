@@ -10,8 +10,17 @@ public class FloatAndDouble {
         System.out.println("Minimum double value: " + minDoubleValue);
         System.out.println("Maximum double value: " + maxDoubleValue);
 
-        int intValue = 5;
-        float floatValue = 5.25f;
-        double doubleValue = 5.25d;
+        int intValue = 5 / 3;
+        float floatValue = 5f / 3f;
+        double doubleValue = 5.00 / 3.00;
+
+        // floating point precision and a challenge
+        System.out.println("intValue = " + intValue);
+        System.out.println("floatValue = " + floatValue);
+        System.out.println("doubleValue = " + doubleValue);
+
+        double pounds = 5;
+        double kilograms = 0.45359237 * pounds;
+        System.out.println("kilograms = " + kilograms);
     }
 }
