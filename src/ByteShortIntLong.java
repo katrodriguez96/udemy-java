@@ -2,14 +2,14 @@ public class ByteShortIntLong {
     public static void main(String[] args) {
         int myValue = 10000;
 
-        int minValue = Integer.MIN_VALUE;
-        int maxValue = Integer.MAX_VALUE;
-        System.out.println("Minimum integer value: " + minValue);
-        System.out.println("Maximum integer value: " + maxValue);
+        int minIntValue = Integer.MIN_VALUE;
+        int maxIntValue = Integer.MAX_VALUE;
+        System.out.println("Minimum integer value: " + minIntValue);
+        System.out.println("Maximum integer value: " + maxIntValue);
         // overflow
-        System.out.println("Busted max value: " + (maxValue + 1));
+        System.out.println("Busted max int value: " + (maxIntValue + 1));
         // underflow
-        System.out.println("Busted min value: " + (minValue - 1));
+        System.out.println("Busted min int value: " + (minIntValue - 1));
 
         byte minByteValue = Byte.MIN_VALUE;
         byte maxByteValue = Byte.MAX_VALUE;
@@ -31,5 +31,11 @@ public class ByteShortIntLong {
         long maxLongValue = Long.MAX_VALUE;
         System.out.println("Minimum long value: " + minLongValue);
         System.out.println("Maximum long value: " + maxLongValue);
+
+        // Casting
+        int myTotal = (minIntValue / 2);
+        byte newByteValue = (byte) (minByteValue / 2);
+        short newShortValue = (short) (minShortValue / 2);
+
     }
 }
