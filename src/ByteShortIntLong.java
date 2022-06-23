@@ -37,5 +37,11 @@ public class ByteShortIntLong {
         byte newByteValue = (byte) (minByteValue / 2);
         short newShortValue = (short) (minShortValue / 2);
 
+        // Primitive Types Challenge
+        byte myByte = 2;
+        short myShort = 4;
+        int myInt = 6;
+        long myLong = 50000 + (10 * (myByte + myShort + myInt));
+        System.out.println(myLong);
     }
 }
