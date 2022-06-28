@@ -77,5 +77,18 @@ public class Operators {
         if (wasCar) {
             System.out.println("wasCar is true");
         }
+
+        // operator challenge
+        double doubleOne = 20.00;
+        double doubleTwo = 80.00;
+        double doubleResult = (doubleOne + doubleTwo) * 100.00;
+        System.out.println("doubleResult = " + doubleResult);
+        double remainder = doubleResult % 40.00;
+        System.out.println("remainder = " + remainder);
+        boolean isZero = remainder == 0 ? true : false;
+        System.out.println("isZero = " + isZero);
+        if (!isZero) {
+            System.out.println("Got some remainder.");
+        }
     }
 }
