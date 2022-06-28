@@ -1,3 +1,5 @@
+package section3firststeps;
+
 public class Operators {
     public static void main(String[] args) {
         int result = 1 +2; // 1 + 2 = 3
@@ -52,8 +54,12 @@ public class Operators {
         }
 
         int secondTopScore = 81;
-        if (topScore > secondTopScore && topScore < 100) {
+        if ((topScore > secondTopScore) && (topScore < 100)) {
             System.out.println("Greater than second top score and less than 100");
+        }
+
+        if ((topScore > 90) || (secondTopScore <= 90)) {
+            System.out.println("Either or both conditions are true.");
         }
     }
 }
